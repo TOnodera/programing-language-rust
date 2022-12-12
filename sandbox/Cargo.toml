@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 walkdir = "2.3.2"
-tokio = { version = "1.23.0" ,features = ["full"] }
+tokio = { version = "1.23.0" ,features = ["full","time"] }
