@@ -1,6 +1,6 @@
 #[derive(Debug)]
-struct S {
-    r: &i32,
+struct S<'a> {
+    r: &'a i32,
 }
 fn main() {
     let s;
