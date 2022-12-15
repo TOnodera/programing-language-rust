@@ -28,6 +28,7 @@ where
             let maybe_waker = {
                 let mut gurad = inner.lock().unwrap();
                 gurad.value = Some(value);
+                // waker.take()はSome(waker)を返しShared.wakerはNoneになる（消費する)
                 gurad.waker.take()
             };
 
